@@ -20,12 +20,12 @@ try
     "==================================================================================================================" | Out-File $ErrorLogFile -Append
     "======================================= Retrieve encrypted Client Secret From Text File ==========================" | Out-File $ErrorLogFile -Append
     
-    $SecureKey = Get-Content -path  "$scriptDir\SecurityKeyTest.txt" | Out-File $ErrorLogFile -Append
+    $SecureKey = Get-Content -path  "$scriptDir\SecurityKey.txt" | Out-File $ErrorLogFile -Append
 
          
     "======================================= Fetched the Client Secret From Text File =================================" | Out-File $ErrorLogFile -Append
 
-   # $ClientSecret = "GHO8Q~Oi0NCsdwwGAkbrPseuaoD0wem.GUQKqamL"
+   
            
     $PasswordSecureSecret = ConvertTo-SecureString $SecureKey | Out-File $ErrorLogFile -Append
     $EncryptedSecret =     ConvertFrom-SecureString $PasswordSecureSecret | Out-File $ErrorLogFile -Append
