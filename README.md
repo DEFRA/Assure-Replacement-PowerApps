@@ -1,1 +1,1 @@
-# Assure-Replacement-PowerApps
+This PowerShell script will get triggered every 10 min using Windows scheduler. This script will pull the XML file from the Dataverse and store into APHA servers shared PMEfolder where Sample Manager job picks up. 
