@@ -1,1 +1,1 @@
-This PowerShell script will get triggered every 10 min using Windows scheduler. This script will pull the XML file from the Dataverse and store into APHA servers shared PMEfolder where Sample Manager job picks up. 
+This script is used to extract a file from Dataverse using a ClientID/Secret for an AAD Service Account and storing it within a known shared directory for consumption by downstream systems.
